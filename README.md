@@ -18,6 +18,7 @@ CityWeatherPresenter.kt === CityWeatherFragment.kt has reference of CityWeatherP
 CityWeatherPresenter.kt also has reference of CityWeatherFragment.kt class to update views accordingly. This class implements ICityWeatherPresenter.kt class which has some contract methods for presenter classes. 
 
 Other general details are provided as comments in code itself.
+
 Thanks.
 
 
