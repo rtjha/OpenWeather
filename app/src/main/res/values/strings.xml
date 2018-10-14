@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">OpenWeather</string>
+    <string name="getWeather">Get Weather</string>
+    <string name="errCityName">Please enter city name.</string>
+    <string name="openWeatherApiKey">b6907d289e10d714a6e88b30761fae22</string>
+    <string name="openWeather">Open Weather</string>
+    <string name="txtNoInternet">There is no internet, please connect after some time.</string>
+
+
+    <string name="txtWind">Wind:</string>
+    <string name="txtCloudiness">Cloudiness:</string>
+    <string name="txtPressure">Pressure:</string>
+    <string name="txtHumidity">Humidity:</string>
+    <string name="txtSunRise">Sunrire:</string>
+    <string name="txtSunSet">Sunset:</string>
+    <string name="txtGeoCoords">Geo coords:</string>
+    <string name="cityName">Altstadt</string>
+
+    <string name="txtDemoAPI">Currently default API key is used for this app, which returns data for city "'Altstadt'", API key can be changed
+    from strings.xml with key "'openWeatherApiKey'."</string>
+    <string name="noDataAvailable">No data avialable.</string>
+
+    <string name="mps">m/s</string>
+    <string name="hpa">hpa</string>
+    <string name="strtBracket">[</string>
+    <string name="endBracket">]</string>
+</resources>

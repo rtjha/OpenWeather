@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/space_15">
+
+    <TextView
+        android:id="@+id/txtDemoAPI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtDemoAPI"/>
+
+    <EditText
+        android:id="@+id/edtCityName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txtDemoAPI"
+        app:layout_constraintRight_toLeftOf="@id/btnGetWeather"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="@string/cityName"
+        android:maxLines="1"
+        android:layout_marginTop="@dimen/space_20"/>
+
+
+    <Button
+        android:id="@+id/btnGetWeather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/getWeather"
+        app:layout_constraintTop_toBottomOf="@id/txtDemoAPI"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/space_20"/>
+
+
+    <TextView
+        android:id="@+id/txtWind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnGetWeather"
+        android:text="@string/txtWind"
+        android:layout_marginTop="@dimen/space_20"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/txtCloudiness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtWind"
+        android:text="@string/txtCloudiness"
+        android:layout_marginTop="@dimen/space_5"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/txtPressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtCloudiness"
+        android:text="@string/txtPressure"
+        android:layout_marginTop="@dimen/space_5"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/txtHumidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtPressure"
+        android:text="@string/txtHumidity"
+        android:layout_marginTop="@dimen/space_5"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/txtSunRise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtHumidity"
+        android:text="@string/txtSunRise"
+        android:layout_marginTop="@dimen/space_5"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/txtSunSet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtSunRise"
+        android:text="@string/txtSunSet"
+        android:layout_marginTop="@dimen/space_5"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/txtGeoCoords"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtSunSet"
+        android:text="@string/txtGeoCoords"
+        android:layout_marginTop="@dimen/space_5"
+        android:visibility="gone"/>
+
+    <ProgressBar
+        android:id="@+id/progBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnGetWeather"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>
